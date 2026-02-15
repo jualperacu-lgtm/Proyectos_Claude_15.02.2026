@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaiLoy - Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-box">
+      <div class="brand">TaiLoy</div>
+      <div class="subtitle">Sistema de Ventas</div>
+      <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+      <div id="loginError" class="login-error"></div>
+    </div>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>initLogin();</script>
+</body>
+</html>

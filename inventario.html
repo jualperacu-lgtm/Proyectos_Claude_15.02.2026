@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaiLoy - Inventario</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <span class="logo">TaiLoy</span>
+    <nav>
+      <a href="home.html">Ventas</a>
+      <a href="inventario.html" class="active">Inventario</a>
+    </nav>
+    <div>
+      <span class="user-info" id="userInfo"></span>
+      <button class="btn-logout" id="btnLogout">Salir</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">Inventario de Productos</h2>
+    <table class="tabla-inventario">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Producto</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Stock</th>
+        </tr>
+      </thead>
+      <tbody id="inventarioBody"></tbody>
+    </table>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>initInventario();</script>
+</body>
+</html>

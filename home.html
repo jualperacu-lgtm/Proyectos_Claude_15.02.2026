@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaiLoy - Ventas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <span class="logo">TaiLoy</span>
+    <nav>
+      <a href="home.html" class="active">Ventas</a>
+      <a href="inventario.html">Inventario</a>
+    </nav>
+    <div>
+      <span class="user-info" id="userInfo"></span>
+      <button class="btn-logout" id="btnLogout">Salir</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">Punto de Venta</h2>
+    <div class="ventas-layout">
+      <div class="productos-grid" id="productosGrid"></div>
+      <div class="carrito">
+        <h3>Carrito de Compra</h3>
+        <div class="carrito-items" id="carritoItems"></div>
+        <div class="carrito-total">
+          <span>Total:</span>
+          <span class="total-monto" id="carritoTotal">S/ 0.00</span>
+        </div>
+        <button class="btn-pagar" id="btnPagar" disabled onclick="procesarVenta()">Procesar Venta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>initVentas();</script>
+</body>
+</html>
